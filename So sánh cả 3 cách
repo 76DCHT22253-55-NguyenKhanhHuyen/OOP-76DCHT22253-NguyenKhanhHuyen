@@ -1,0 +1,24 @@
+So sánh 3 cách sử dụng mảng:
+ • Cách 1: Mảng tĩnh
+ • Khai báo: NhanVien dsnv[10]
+ • Kích thước mảng được xác định ngay khi khai báo và không thay đổi được trong quá trình chạy.
+ • Bộ nhớ được cấp phát tự động.
+ • Không cần giải phóng bộ nhớ bằng delete.
+ • Cách sử dụng đơn giản, dễ hiểu.
+ • Cách 2: Mảng động
+ • Khai báo con trỏ: NhanVien *dsnv
+ • Cấp phát bộ nhớ bằng: new NhanVien[10]
+ • Có thể cấp phát số lượng phần tử theo nhu cầu khi chương trình chạy.
+ • Sau khi sử dụng phải giải phóng bộ nhớ bằng: delete[] dsnv
+ • Linh hoạt hơn mảng tĩnh nhưng cách sử dụng phức tạp hơn.
+ • Cách 3: Vector
+ • Khai báo: vector<NhanVien> ds
+ • Kích thước vector có thể tự động thay đổi trong quá trình chạy.
+ • Có thể thêm phần tử bằng hàm push_back().
+ • Không cần tự quản lý việc cấp phát và giải phóng bộ nhớ.
+ • Cách sử dụng linh hoạt và thuận tiện hơn so với mảng tĩnh và mảng động.
+
+Kết luận:
+ • Mảng tĩnh đơn giản, dễ sử dụng nhưng kích thước cố định.
+ • Mảng động linh hoạt hơn nhưng phải tự quản lý bộ nhớ.
+ • Vector linh hoạt và thuận tiện nhất vì có thể tự động thay đổi kích thước và hỗ trợ nhiều hàm xử lý
